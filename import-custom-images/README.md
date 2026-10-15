@@ -2,6 +2,7 @@
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![OCI CLI](https://img.shields.io/badge/OCI-CLI-F80000)](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm)
+[![Tests: 109](https://img.shields.io/badge/tests-109-brightgreen)](#tests)
 
 **English (en-US)** · [Português (pt-BR)](README.pt-BR.md) · [All scripts](../README.md)
 
