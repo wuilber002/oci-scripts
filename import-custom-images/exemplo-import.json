@@ -1,0 +1,14 @@
+{
+  "images": [
+    {
+      "source": "https://example.com/imagem-1.qcow2",
+      "compartment_id": "ocid1.compartment.oc1..substitua_pelo_ocid",
+      "image_name": "Minha imagem 1"
+    },
+    {
+      "source": "https://example.com/imagem-2.vmdk",
+      "compartment_id": "ocid1.compartment.oc1..substitua_pelo_ocid",
+      "image_name": "Minha imagem 2"
+    }
+  ]
+}

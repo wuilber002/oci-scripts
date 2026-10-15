@@ -1,0 +1,39 @@
+# Python and local development
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+.DS_Store
+
+# Local tool configuration and credentials
+.agents/
+.codex/
+.aws/
+.oci/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Importer state, logs, and user-provided batches
+.oci-import/
+*.log
+/import-custom-images/images.json
+/import-custom-images/imagens.json
+
+# Virtual disks and archives used as input
+*.qcow2
+*.qcow
+*.vmdk
+*.vdi
+*.vhd
+*.vhdx
+*.raw
+*.img
+*.iso
+*.ova
+*.ovf
