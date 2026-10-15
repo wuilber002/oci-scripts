@@ -295,16 +295,17 @@ Accepted conversions are monitored until they reach a terminal state. Successful
 
 ## Terminal progress
 
-```text
-+-------+------------------------+----------+--------+---------+----------+
-| Count | Image Name             | download | upload | convert | clean-up |
-+-------+------------------------+----------+--------+---------+----------+
-| 01/03 | custom-image-debian-13 | 100%     | 098%   | ------- | -------- |
-| 02/03 | custom-image-debian-12 | 053%     | ------ | ------- | -------- |
-| 03/03 | custom-image-debian-11 | 100%     | 100%   | 033%    | -------- |
-+-------+------------------------+----------+--------+---------+----------+
-Processados: 0/3 | Sucesso: 0 | Falhas: 0 | Pendentes: 3
-```
+**Downloads, uploads, and conversions running concurrently:**
+
+![Downloads, uploads, and conversions in progress](images/screenshot-0001.png)
+
+**Conversions finishing and source objects being cleaned up:**
+
+![Conversions and cleanup in progress](images/screenshot-0002.png)
+
+**Completed execution with image names, OCIDs, and log location:**
+
+![Successful execution and created image OCIDs](images/screenshot-0003.png)
 
 The table refreshes on changes at one-second intervals; conversion polling uses an internal 30-second interval. Interactive terminals redraw the table. Redirected output receives snapshots without ANSI escape sequences. Runtime messages remain in Portuguese; the summary above means processed, successful, failed, and pending images.
 

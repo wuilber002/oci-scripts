@@ -295,16 +295,17 @@ Uma conversão aceita é acompanhada até um estado terminal. Em sucesso, a imag
 
 ## Progresso no terminal
 
-```text
-+-------+------------------------+----------+--------+---------+----------+
-| Count | Image Name             | download | upload | convert | clean-up |
-+-------+------------------------+----------+--------+---------+----------+
-| 01/03 | custom-image-debian-13 | 100%     | 098%   | ------- | -------- |
-| 02/03 | custom-image-debian-12 | 053%     | ------ | ------- | -------- |
-| 03/03 | custom-image-debian-11 | 100%     | 100%   | 033%    | -------- |
-+-------+------------------------+----------+--------+---------+----------+
-Processados: 0/3 | Sucesso: 0 | Falhas: 0 | Pendentes: 3
-```
+**Downloads, uploads e conversões em paralelo:**
+
+![Downloads, uploads e conversões em andamento](images/screenshot-0001.png)
+
+**Conversões sendo concluídas e objetos de origem sendo removidos:**
+
+![Conversões e limpeza em andamento](images/screenshot-0002.png)
+
+**Execução concluída com nomes, OCIDs das imagens e caminho do log:**
+
+![Execução concluída e OCIDs das imagens criadas](images/screenshot-0003.png)
 
 A tabela atualiza quando há mudanças, em intervalos de um segundo; consultas de conversão usam um intervalo interno de 30 segundos. Em terminal interativo, a tabela é redesenhada; em saída redirecionada, são emitidos snapshots sem sequências ANSI.
 
